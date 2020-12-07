@@ -35,7 +35,6 @@ export class RecipeEditComponent implements OnInit {
 
     if (this.editMode) {
       this.recipe = this.recipeService.getRecipe(this.id);
-      console.log(this.recipe);
 
       recipeName = this.recipe.name;
       recipeImagePath = this.recipe.imagePath;

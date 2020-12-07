@@ -3,7 +3,6 @@
 </div>
 <br>
 <div class="row col-sm-12" class="list-group" style="margin-left: 1em;">
-    <app-recipes-item *ngFor="let recipeEl of recipes; let i=index" [recipe]='recipeEl'
-     (click)="selectedRecipe(i)">
+    <app-recipes-item *ngFor="let recipeEl of recipes; let i=index" [recipe]='recipeEl' (click)="selectedRecipe(i)">
     </app-recipes-item>
 </div>

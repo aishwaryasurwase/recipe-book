@@ -26,16 +26,13 @@ export class AuthComponent implements OnInit {
     if (this.isLoginMode) {
       // Login
       let user = this.authSerive.verifyUser(form.value.email, form.value.password);
-      console.log("USER DETAILS ....", user);
       if (user) {
-        console.log("User login successful...");
         this.isAuthenticate = true;
         this.authSerive.isAuthenticate.next(true);
         alert("User login successful");
         this.router.navigate(['/recipes'])
       } else {
         alert('Failed to login');
-        console.log("Failed to login...");
       }
     } else {
       // Signup

@@ -42,7 +42,6 @@ export class RecipesDetailsComponent implements OnInit {
   }
 
   onEditRecipe() {
-}
-
+  }
 
 }

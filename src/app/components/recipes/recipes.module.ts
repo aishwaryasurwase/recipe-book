@@ -1,5 +1,4 @@
 import { CommonModule } from '@angular/common';
-// import { HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
 import { ReactiveFormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
@@ -10,8 +9,6 @@ import { RecipesItemComponent } from './recipes-list/recipes-item/recipes-item.c
 import { RecipesListComponent } from './recipes-list/recipes-list.component';
 import { RecipesComponent } from './recipes.component';
 import { RecipesRoutingModule } from './recipes-routing.module';
-import { SharedModule } from '../shared/shared.module';
-import { BrowserModule } from '@angular/platform-browser';
 
 @NgModule({
     declarations: [
@@ -24,8 +21,6 @@ import { BrowserModule } from '@angular/platform-browser';
     ],
     imports: [
         CommonModule,
-        // BrowserModule,
-        // SharedModule,
         RouterModule,
         ReactiveFormsModule,
         RecipesRoutingModule

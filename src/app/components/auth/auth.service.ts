@@ -12,21 +12,19 @@ export class AuthService {
   constructor() { }
 
   addUser(email: string, password: string) {
-    let newUser = this.users.find((user) => {
+    let newUser = this.users.find((user: Auth) => {
       return user.email === email;
     })
     if (!newUser) {
       this.users.push({ email: email, password: password });
-      // console.log("Account created successfully...");
       alert('Account created successfully');
     } else {
-      // console.log("Email already exists...");
       alert('Email already exists');
     }
   }
 
   verifyUser(email: string, password: string) {
-    let user = this.users.find((user) => {
+    let user = this.users.find((user: Auth) => {
       return user.email === email && user.password === password
     })
     return user;

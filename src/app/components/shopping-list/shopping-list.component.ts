@@ -2,6 +2,7 @@ import { Component, OnInit, Input, EventEmitter, Output, OnDestroy } from '@angu
 import { Subscription } from 'rxjs';
 import { Ingredients } from '../models/ingredients.model';
 import { ShoppingListService } from './shopping-list.service';
+
 @Component({
   selector: 'app-shopping-list',
   templateUrl: './shopping-list.component.html',
